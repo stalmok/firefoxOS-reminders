@@ -1,0 +1,7 @@
+/*
+ * Reset firefox OS default styles
+ */
+
+input, button {
+  background: none;
+}

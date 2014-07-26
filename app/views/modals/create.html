@@ -1,0 +1,17 @@
+<div id="new-reminder" class="modal">
+  <header class="bar bar-nav">
+    <a class="icon icon-close pull-right" data-ng-click="unsetCurrent(); closeModal('new-reminder')"></a>
+    <h1 class="title">Create Reminder</h1>
+  </header>
+
+  <div class="content">
+    <form class="content-padded" name="form" data-ng-submit="add(reminder); closeModal('new-reminder')" novalidate>
+      <input type="text" name="text" data-ng-model="reminder.text" placeholder="Remind me to" required>
+      <div class="my-input-row">
+        <input type="date" name="date" class="pull-left" data-ng-model="reminder.date" placeholder="Date" required>
+        <input type="time" name="time" class="pull-right" data-ng-model="reminder.time" placeholder="Time" required>
+      </div>
+      <button type="submit" class="btn btn-positive btn-block" ng-disabled="form.$invalid">Create</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div id="snooze-reminder" class="modal snooze-modal">
+  <div class="content">
+    <div class="content-padded">
+      <button class="btn btn-primary btn-block" data-ng-click="done(); closeModal('snooze-reminder')">I'm done with it</button>
+
+      <h3>Remind again in</h3>
+      <button class="btn btn-block" data-minutes="5" data-ng-click="snooze(5)">5 Minutes</button>
+      <button class="btn btn-block" data-minutes="10" data-ng-click="snooze(10)">10 Minutes</button>
+      <button class="btn btn-block" data-minutes="60" data-ng-click="snooze(60)">An hour</button>
+      <button class="btn btn-block" data-minutes="1440" data-ng-click="snooze(1440)">A day</button>
+      <button class="btn btn-block" data-minutes="10080" data-ng-click="snooze(10080)">A week</button>
+
+      <a class="btn btn-positive btn-block" data-ng-click="closeModal('snooze-reminder'); openModal('edit-reminder')">Edit</a>
+    </div>
+  </div>
+</div>

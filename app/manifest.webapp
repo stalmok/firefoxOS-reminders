@@ -1,0 +1,30 @@
+{
+  "name": "Reminders",
+  "description": "Quickly add things you need to do and be reminded at the right time.",
+  "version": "1.0",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icons/reminders-128.png",
+    "60": "/icons/reminders-60.png"
+  },
+  "developer": {
+    "name": "Kestutis Stalmokas"
+  },
+  "permissions": {
+    "alarms": {
+      "description": "Required to schedule notifications"
+    },
+    "desktop-notification": {
+      "description": "Required to show notifications"
+    }
+  },
+  "messages": [
+    {
+      "alarm": "/index.html"
+    },
+    {
+      "notification": "/index.html"
+    }
+  ],
+  "default_locale": "en"
+}

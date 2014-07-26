@@ -1,0 +1,20 @@
+<div id="edit-reminder" class="modal">
+  <header class="bar bar-nav">
+    <button class="btn btn-negative pull-left" data-ng-click="delete(); closeModal('edit-reminder')">
+      Delete
+    </button>
+    <a class="icon icon-close pull-right" data-ng-click="unsetCurrent(); closeModal('edit-reminder')"></a>
+    <h1 class="title">Update Reminder</h1>
+  </header>
+
+  <div class="content">
+    <form class="content-padded" name="form" data-ng-submit="update(reminder); closeModal('edit-reminder')">
+      <input type="text" name="text" data-ng-model="reminder.text" placeholder="Remind me to" required>
+      <div class="my-input-row">
+        <input type="date" name="date" class="pull-left" data-ng-model="reminder.date" placeholder="Date" required>
+        <input type="time" name="time" class="pull-right" data-ng-model="reminder.time" placeholder="Time" required>
+      </div>
+      <button class="btn btn-positive btn-block" ng-disabled="form.$invalid">Update</button>
+    </form>
+  </div>
+</div>
