@@ -1,8 +1,9 @@
 {
-  "name": "reminders",
-  "version": "0.0.0",
+  "name": "Reminders",
+  "version": "1.0.0",
+  "repository": "https://github.com/kestutis-stalmokas/firefoxOS-reminders",
   "dependencies": {
-    "angular": "1.2.20",
+    "angular": "~1.2.20",
     "ratchet": "~2.0.2",
     "moment": "~2.7.0",
     "angular-touch": "~1.2.20"
